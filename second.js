@@ -30,4 +30,5 @@ console.log(b*b*b)
 let c=parseInt(prompt("enter first num"))
 let d=parseInt(prompt("enter second num"))
 let e=c+d
+console.log(e)
 console.log(e*e)
