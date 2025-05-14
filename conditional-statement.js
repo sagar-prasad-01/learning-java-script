@@ -32,12 +32,22 @@
 // else{
 //     alert("num id negitive")
 // }
+ let age=parseInt(prompt("enter your age"))
+if(age>17)
+{
+    let country=prompt("enter your country name")
 
+    if(country=="india")
+    {
+        console.log("you are eligible for vote")
 
-let n=1
-
-do{
-console.log(n)
-n++
+    }
+    else
+    {
+          console.log("not eligible for vote")
+    }
 }
-while(n<11)
+else
+{
+    console.log("user can not vote")
+}
