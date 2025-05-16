@@ -44,3 +44,4 @@ for(let i=1;i<=10;i++)
 else{
     console.log(n*n*n);
 }
+
