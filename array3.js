@@ -1,0 +1,17 @@
+let arr=["sagar" ,18,1,51,2,65,34]
+console.log(arr)
+// console.log(arr);
+// arr.push("hello","how",12)
+// console.log(arr)
+// arr.pop()
+// console.log(arr)
+// arr.unshift("hello",18)
+// console.log(arr)
+// arr.shift()
+// console.log(arr)
+let a=arr.slice(1,4)
+console.log(a)
+arr.splice(1,4)
+console.log(arr)
+arr.splice(1,0,"nihal")
+console.log(arr)
