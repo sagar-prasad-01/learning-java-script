@@ -1,0 +1,3 @@
+Object a={
+    name
+}
