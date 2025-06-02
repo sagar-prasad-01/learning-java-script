@@ -3,17 +3,74 @@
  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>COUNTER APP</title>
+    <style>
+        body{
+            background-color:rgba(19, 96, 143, 0.582) ;
+        }
+        #counter{
+           
+            position: absolute;
+            top: 25%;
+            left: 30%;
+            height: 60%;
+            width: 40%;
+            text-align: center;
+            border: 3px solid rgba(223, 61, 210, 0.356);
+            background-color: rgba(183, 123, 236, 0.842);
+            border-radius:  0px 60px;
+            box-shadow: 10px 5px 5px rgba(149, 0, 255, 0.422);
+        }
+        h1{
+            color:white;
+            font-size: 50px;
+        }
+        h2{
+            font-size: 50px;
+             margin: 40px;
+        }
+        button{
+            margin: 40px;
+            padding:  12px ;
+            font-size: 20px;
+            font-weight: bolder;
+            border-radius:0 30%;
+            border: 2px solid rgba(25, 99, 99, 0.689);  
+
+        }
+        #btn1{
+            background-color: rgba(0, 128, 0, 0.662);
+            color: white;
+        }
+        #btn2{
+            background-color: rgb(183, 39, 39);
+            color: white;
+            border: 2px solid rgba(255, 0, 0, 0.242);
+        }
+        #btn3{
+            background-color: rgba(47, 65, 164, 0.68);
+            color: white;
+        }
+        button:hover{
+           transform: scale(1.1);
+           border-radius: 50%;
+           background-color: rgba(185, 0, 252, 0.493);
+           cursor: pointer;
+        }
+    </style>
  </head>
  <body>
-    <h1 id="count">0</h1>
-    <button onclick="decrement()">-</button>
-    <button onclick="increment()">+</button>
-    <button onclick="reset()">r</button>
-    <button id="fi"></button>
+   <div id="counter"> 
+    <h1>COUNTER</h1>
+    <h2 id="count">0</h2>
+    <button onclick="decrement()" id="btn1">decrement</button>
+    <button onclick="reset()" id="btn2"><i class="fa-solid fa-rotate-right"></i></button>
+    <button onclick="increment()" id="btn3">increment</button>
+    </div>
 
 
-    <h1 id="red" onmouseenter="func1()" onmouseleave="func2()">Hover on me</h1>
+    <!-- <h1 id="red" onmouseenter="func1()" onmouseleave="func2()">Hover on me</h1> -->
     <script src="counter.js"></script>
  </body>
  </html>
