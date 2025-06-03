@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(136, 229, 198);
+            padding: 0;
+            margin: 0;
+        }
+        #parent{
+            display: grid;
+            border: 1px solid red;
+         grid-template-columns:repeat(2,1fr);
+         justify-content: center; 
+       
+        }
+        #left img{
+            height: 10%;
+            width: 30%;
+        }
+        #left{
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        
+        }
+        #right img{
+            margin-top: 50px;
+            height: 500px;
+            width: 400px;
+        }
+        
+    
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="left">
+        <img src="bewkoof_img/3s,1.webp"  onmouseenter="changeimg('bewkoof_img/3s,1.webp')">
+        <img src="bewkoof_img/3s,2.webp"  onmouseenter="changeimg('bewkoof_img/3s,2.webp')"alt="">
+        <img src="bewkoof_img/2s,1.webp"  onmouseenter="changeimg('bewkoof_img/2s,1.webp')"alt="">
+        <img src="bewkoof_img/2s,2.webp" onmouseenter="changeimg('bewkoof_img/2s,2.webp')" alt="">
+        <img src="bewkoof_img/2s,3.webp"  onmouseenter="changeimg('bewkoof_img/2s,3.webp')"alt="">
+    </div>
+    <div id="right">
+        <img src="bewkoof_img/3s,1.webp" alt="" id="mainimg">
+    </div>
+    </div>
+    <script src="eventtask2.js"></script>
+</body>
+</html>

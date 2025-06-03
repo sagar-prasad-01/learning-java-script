@@ -1,4 +1,4 @@
 function func()
 {
-    alert("working")
+    alert("working ")
 }
