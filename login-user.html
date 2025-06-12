@@ -8,26 +8,43 @@
 <body>
    
     
-    email<input type="text"placeholder="email"  id="email"> <br>
-    password <input type="text" placeholder="password" id="password "><br>
+    email    <input type="text"placeholder="email"  id="email"> <br>
+    password <input type="text" placeholder="password" id="password"><br>
     <button onclick="login_user()">login</button>
     <script>
         let user_email=["email1","email2","email3","email4","email5"];
         let user_password=["pass1","pass2","pass3","pass4","pass5"];
         const login_user=()=>{
             let user_input_email=document.getElementById("email").value;
-            user_email.map((e)=>{
-                if(e===user_input_email){
-                    alert("value match");
-                }
-                else{
-                    alert("value  not match");
-                }
+            let user_input_pass=document.getElementById("password").value;
+            
+            
+            console.log(user_input_email)
+        let ind=user_email.findIndex(e=>e===user_input_email);
+        console.log(ind);
 
-            })
+            if(user_input_email===user_email[ind] && user_input_pass===user_password[ind])
+        {
+
+            console.log("login successfull")
+        }
+            // user_email.map((e)=>{
+            //     if(e===user_input_email){
+            //         alert("value match");
+            //         found=true;
+            //     }
+            //     if(!found){
+            //         alert("value  not match");
+            //     }
+
+            // })
             
         }
     </script>
     
 </body>
 </html>
+<!-- findindex is a method which can return a index or position
+ from an array in which it is neccesary condition to pass
+  a ananomous function -->
+  <!-- make a crude operation create read update and dellete on a js array using choice best input taken from user  -->
