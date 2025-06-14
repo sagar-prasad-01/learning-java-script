@@ -29,12 +29,49 @@ create_btn.addEventListener("click",function(){
     })
 })
 read_btn.addEventListener("click",function(){
-    alert(arr)
+    let data=document.getElementById("inner2")
+    let data1=arr.map((e)=>{
+        return e;
+    })
+    if(data1.length==0)
+    {
+        data.innerHTML="<h1>no element in array</h1>";
+    }
+    else{
+        data.innerHTML=data1;
+
+    }
     
 })
+const handleupdate=()=>{
+    let data=document.getElementById("findupdate").value;
+    let ind=arr.findIndex((e)=>e===data);
+    let data2=document.getElementById("updateele").value;
+    console.log(ind);
+    if(ind==-1){
+        console.log("not found")
+
+    }
+    else{
+        arr[ind]=data2;
+    }
+}
 update_btn.addEventListener("click",function(){
     alert("hello create")
 })
+const handledelete=()=>{
+    let data=document.getElementById("finddelete").value;
+    let ind=arr.findIndex((e)=>e===data);
+    
+    console.log(ind);
+    if(ind==-1){
+        console.log("not found")
+
+    }
+    else{
+        arr.splice(ind,1);
+    }
+}
 delete_btn.addEventListener("click",function(){
     alert("hello create")
 })
