@@ -55,10 +55,22 @@ const handleupdate=()=>{
     else{
         arr[ind]=data2;
     }
+    update_form=document.getElementById("inner3");
+     Object.assign(update_form.style,{
+        display:"none"
+    })
+
 }
 update_btn.addEventListener("click",function(){
-    alert("hello create")
+   update_form=document.getElementById("inner3");
+     Object.assign(update_form.style,{
+        left:"0%",
+        top:"30vh",
+        display:"block"
+    })
 })
+
+
 const handledelete=()=>{
     let data=document.getElementById("finddelete").value;
     let ind=arr.findIndex((e)=>e===data);
@@ -71,8 +83,18 @@ const handledelete=()=>{
     else{
         arr.splice(ind,1);
     }
+    Object.assign(delete_form.style,{
+        left:"0%",
+        top:"30vh",
+        display:"none"
+    })
 }
 delete_btn.addEventListener("click",function(){
-    alert("hello create")
+     delete_form=document.getElementById("inner4")
+    Object.assign(delete_form.style,{
+        left:"0%",
+        top:"30vh",
+        display:"block"
+    })
 })
 

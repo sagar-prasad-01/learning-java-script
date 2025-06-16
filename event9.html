@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>find method of array</h1>
+    <div id="div"></div>
+
+    <script>
+        let arr=["ram","sagar"];
+        let x=document.getElementById("div")
+        let y=arr.find((e)=>{return e==="ram"});
+        //or  let y=arr.find((e)=> e==="ram");
+        x.innerHTML=y;
+
+
+        let obj={
+            fname:"sagar",
+            lname:"prasad",
+            "key":"value"
+        }
+        console.log(obj["fname"])
+        console.log(obj.fname)
+        console.log(obj["key"])
+        obj.key2="value2";
+         Object.freeze(obj);//funstion of object no any chnges now   
+        obj.fname="sivam"
+        console.log(obj)
+    </script>
+</body>
+</html>
+<!-- in js object is a user define  datatype   -->
+ <!-- new keyword in object is know singleton object -->
+  <!-- new is a crunstructor -->
