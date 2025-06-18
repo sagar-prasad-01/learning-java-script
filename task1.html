@@ -7,26 +7,31 @@
 </head>
 <body>
     enter email <input type="text" name="" id="email">
-    enter password <input type="text" name="" id="password">
+ enter password <input type="text" name="" id="password">
+    <button id="btn" onclick="fun()">submit</button>
     <script>
         let emailobj={
-            emaila:email1,
-            emailb:email2,
-            emailc:email3,
-            emaild:email4,
-            emaile:email5
+            emailb:"email2",
+            emaila:"email1",
+            emailc:"email3",
+            emaild:"email4",
+            emaile:"email5"
         }
         let passwordobj={
-            passa:password1,
-            passb:password2,
-            passc:password3,
-            passd:password4,
-            passe:password5
+            passa:"password1",
+            passb:"password2",
+            passc:"password3",
+            passd:"password4",
+            passe:"password5"
         }
-        let email=document.getElementById("email").value
-        let password=document.getElementById("password").value
-        console.log(email)
-        console.log(password)
+        function fun(){
+
+            let email=document.getElementById("email").value
+            let password=document.getElementById("password").value
+            console.log(email)
+            console.log(password)
+        }
+        
         console.log(emailobj)
         console.log(passwordobj)
     </script>
