@@ -1,25 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>this is class of object</h1>
-
-    <script>
-       
-        let product=[
+  let product=[
             {
                 id:1,
                 image:"bewkoof_img/1s,1.webp",
-                price:101
+                price:100
             },
             {
                 id:2,
                 image:"bewkoof_img/1s,3.webp",
-                price:102
+                price:200
             },
             {
                 id:3,
@@ -62,9 +50,7 @@
                 price:110
             }
         ]
-        product.map((e)=>{
-            console.log(e)
-        })
-    </script>
-</body>
-</html>
+      
+        
+
+        export default product;
