@@ -12,45 +12,43 @@
             {
                 id:3,
                 image:"bewkoof_img/2s,1.webp",
-                price:103
+                price:300
             },
             {
                 id:4,
                 image:"bewkoof_img/2s,2.webp",
-                price:104
+                price:400
             },
             {
                 id:5,
                 image:"bewkoof_img/2s,3.webp",
-                price:105
+                price:500
             },
             {
                 id:6,
                 image:"bewkoof_img/2s,4.webp",
-                price:106
+                price:600
             },
             {
                 id:7,
                 image:"bewkoof_img/2s,5.webp",
-                price:107
+                price:700
             },
             {
                 id:8,
                 image:"bewkoof_img/3s,1.webp",
-                price:108
+                price:800
             },
             {
                 id:9,
                 image:"bewkoof_img/3s,2.webp",
-                price:109
+                price:900
             },
             {
                 id:10,
                 image:"bewkoof_img/3s,3.webp",
-                price:110
+                price:1000 
             }
         ]
-      
-        
 
         export default product;
