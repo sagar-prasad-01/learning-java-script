@@ -19,7 +19,7 @@
 
     </div>
     <script>
-        let user = JSON.parse(localStorage.getItem("user") || '[]')
+        let user=JSON.parse(localStorage.getItem("user") || '[]')
 
         let invalid = document.getElementById("invalid");
         let form = document.getElementById("form");
@@ -29,10 +29,10 @@
             let email = document.getElementById("email").value;
             let password = document.getElementById("password").value;
             console.log(email,password);
-            let founduser = user.find(e=> e.email===email && e.password===password);
+            let founduser=user.find(e=>e.email===email && e.password===password);
             if (founduser){
-                localStorage.setItem("islogin",JSON.stringify(founduser));
-                window.location.href = '/userdashboard.html';
+                localStorage.setItem('islogin',JSON.stringify(founduser));
+                window.location.href ='/userdashboard.html';
             }
             else {
                 invalid.innerHTML = '<h1>invalid mail or password</h1>';

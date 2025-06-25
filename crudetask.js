@@ -8,7 +8,8 @@ const userdata=(e)=>{
     let password=document.getElementById("password").value;
     let z={name,email,mobile,password}
     user.push(z); 
-    //console.log(user)
+    localStorage.setItem("user",JSON.stringify(user))
+    console.log(user)
     window.location.href="/login.html";
 }
 
