@@ -1,8 +1,9 @@
 
 do{
-    var n= parseInt(prompt("enter number"))
+    let n= parseInt(prompt("enter number"))
    
     console.log(n)
+    n--;
 }
 while(n !=0)
 
