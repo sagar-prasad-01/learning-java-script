@@ -25,42 +25,59 @@
 // }
 
 
-//1
-let x=parseInt(prompt("enter any number"))
-if (x%3==0) {
-    alert("divisible by 3");
+// //1
+// let x=parseInt(prompt("enter any number"))
+// if (x%3==0) {
+//     alert("divisible by 3");
     
+// }
+// else{
+//     alert("not divisible by three");
+// }
+
+// //2
+// if (x%2==0) {
+//     alert("even number");
+    
+// }
+// else{
+//     alert("odd number");
+// }
+
+// //3
+// let n1=parseInt(prompt("enter number 1"));
+// let n2=parseInt(prompt("enter number 2"));
+// if (n2%2==0) {
+    
+//     alert(3.14*n1*n1);
+// }
+// else{
+//     alert(n1*n1*n1);
+// }
+
+// //4
+// let y=parseInt(prompt("enter any number"))
+// if (y>0) {
+//     alert(y*y);
+    
+// }
+// else{
+//     alert(y);
+// }
+
+
+//ladder if else
+let x=parseInt(prompt("enter number"));
+if(x>0){
+console.log("+ve")
+}
+else if(x<0){
+console.log("-ve")
+
 }
 else{
-    alert("not divisible by three");
+    console.log("neutral")
+
 }
 
-//2
-if (x%2==0) {
-    alert("even number");
-    
-}
-else{
-    alert("odd number");
-}
 
-//3
-let n1=parseInt(prompt("enter number 1"));
-let n2=parseInt(prompt("enter number 2"));
-if (n2%2==0) {
-    
-    alert(3.14*n1*n1);
-}
-else{
-    alert(n1*n1*n1);
-}
-
-//4
-let y=parseInt(prompt("enter any number"))
-if (y>0) {
-    alert(y*y);
-    
-}
-else{
-    alert(y);
-}
