@@ -75,22 +75,22 @@
 // }
 
 
-   let m=parseInt(prompt("enter number 1"));
-   let n=parseInt(prompt("enter number 2"));
-    let mul=1;
-   if(n%3==0){
-    for (let i = 10;i>=1 ; i--) {
-        if(i%2!=0){
-            console.log(i);
-        }   
-    }
-   }
-   else{
-     for (let i = 5;i>=1 ; i--) {
-        mul=mul*i;
-    }
-    console.log(mul+1);
-   }
+//    let m=parseInt(prompt("enter number 1"));
+//    let n=parseInt(prompt("enter number 2"));
+//     let mul=1;
+//    if(n%3==0){
+//     for (let i = 10;i>=1 ; i--) {
+//         if(i%2!=0){
+//             console.log(i);
+//         }   
+//     }
+//    }
+//    else{
+//      for (let i = 5;i>=1 ; i--) {
+//         mul=mul*i;
+//     }
+//     console.log(mul+1);
+//    }
 
   
 
@@ -98,3 +98,54 @@
 //wap to print sum of all num btw 1 to 10
 //wap to print square of even number btw 20-1
 //
+for (let i = 3; i <=3 ; i++) {
+    for(let j=1;j<=6;j++){
+        document.write("*");
+    }
+   
+}
+
+ document.write("<br>");
+document.write("<br>");
+document.write("<br>");
+
+
+for (let i = 1; i <=4 ; i++) {
+    for(let j=1;j<=6;j++){
+        document.write("*");
+    }
+    document.write("<br>");
+   
+}
+document.write("<br>");
+document.write("<br>");
+document.write("<br>");
+
+
+for (let i = 1; i <=5 ; i++) {
+    for(let j=1;j<=i;j++){
+        document.write("*");
+    }
+    document.write("<br>");
+   
+}
+document.write("<br>");
+document.write("<br>");
+document.write("<br>");
+
+
+for (let i = 1; i <=5 ; i++) {
+    for(let j=1;j<=5;j++){
+        if(i==1 || i==5 ||j<2 || j>4  ){
+
+            document.write("*");
+        }
+        else{
+            document.write("&nbsp&nbsp");
+
+        }
+     
+    }
+    document.write("<br>");
+   
+}
