@@ -3,8 +3,8 @@
 
 var k
 let btn=document.querySelector('#btn');
+let val=0;
 btn.addEventListener('click',()=>{
-    let val=0;
     
     
     k=setInterval(()=>{
@@ -18,3 +18,9 @@ let btn2=document.querySelector('#btn2');
 btn2.addEventListener('click',()=>{
     clearInterval(k)
 })
+
+let btnReset=document.querySelector("#btnr");
+btnReset.addEventListener('click',()=>{
+val=0;
+document.querySelector('#value').textContent=val;
+});
