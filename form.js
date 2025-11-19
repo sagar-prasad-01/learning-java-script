@@ -13,6 +13,6 @@ function handle(){
     let address=document.querySelector("#address").value
 
    
-    document.querySelector("#h11").textContent=name+gmail+mobile;
+    document.querySelector("#h11").textContent=name+gmail+mobile ;
     return false;
 }
