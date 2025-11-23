@@ -49,8 +49,61 @@ let store={
     franchisy:{
         first:"indp",
         second:"mp nagar"
+    },
+    fun1:function(){
+        console.log(1+2)
+    },
+
+     fun2:function(a,b){
+        return a-b
     }
 }
 
+store.fun1()
+console.log(store.fun2(3,2))
+
 console.log(store.weekincome[1]);
 console.log(store.franchisy.second);
+ 
+
+let salary={
+    ...person,
+    ...store,
+    m:"30k",
+    y:"3.6lpa"
+}
+console.log(salary);
+ 
+
+let {namee,agee}={
+    namee:"sagar",
+    agee:23
+}
+console.log(agee); 
+
+let std=[
+    {
+        sname:"sagar"
+    },
+    {
+         sname:"sonu"
+    },
+    {
+         sname:"saanu"
+    }
+] 
+std.push({
+    sname:"rama"
+});
+std.pop()
+console.log(std);
+
+ let std2=std.slice(0,2)
+ console.log(std2);
+
+ let std3=std.splice(1,2)
+ console.log(std3);
+ 
+ 
+
+
