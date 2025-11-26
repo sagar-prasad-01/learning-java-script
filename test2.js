@@ -47,13 +47,27 @@ console.log(obj3.fun3(3,2))
 
 // //2
 // SubmitEvent()
-// namee=document.querySelector("#name").value
-// console.log(namee);
+
+function handle(){
+  const namee = document.querySelector("#name").value;
+  const email = document.querySelector("#gmail").value;
+  const pass = document.querySelector("#pass").value;
+  const mobile = document.querySelector("#mobile").value;
+  const address = document.querySelector("#address").value;
+  let formm={
+      name:namee,
+      email:email,
+      password:pass,
+      mobile:mobile,
+      address:address 
+    }
+    console.log(formm);
+    return false;
+}
 
 
 
 
-// let form={
-//     name:document.querySelector("#name").value
-// }
-// console.log(form.name);
+
+
+
