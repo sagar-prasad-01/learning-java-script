@@ -33,7 +33,7 @@ function handle(){
     let city=document.querySelector("#city").value
     let data=document.querySelector("#data")
 
-    data.textContent=`my name is ${name} and my age is ${age} my city is ${city}`
+    data.textContent=`my name is ${name} and my age is ${age} my city is ${city }`
     return false
 
 
